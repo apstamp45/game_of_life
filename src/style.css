@@ -1,0 +1,12 @@
+.button {
+    -fx-background-color: rgb(50, 50, 50);
+    -fx-text-fill: rgb(150, 150, 150);
+    -fx-font: 12 "Lucida Sans Unicode";
+}
+.label {
+    -fx-text-fill: rgb(150, 150, 150);
+    -fx-font: 12 "Lucida Sans Unicode";
+}
+.root {
+    -fx-background-color: rgb(0, 100, 100);
+}
