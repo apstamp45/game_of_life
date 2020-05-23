@@ -64,7 +64,6 @@ public class Main {
 	 * next generation.
 	 */
 	private static void runGeneration() {
-		System.out.println("hello");
 		for (int i = 0; i < grid.length; i++) {
 			for (int j = 0; j < grid[0].length; j++) {
 				grid[i][j].checkNextState(grid);
