@@ -3,7 +3,7 @@ import javax.swing.Timer;
 import javafx.scene.input.MouseEvent;
 
 /**
- * This program imitates Conway's "Game of Life".
+ * This program simulate Conway's "Game of Life".
  * 
  * @author apstamp45
  * @version 1.5
@@ -30,8 +30,8 @@ public class Main {
 	private static Timer t;
 	
 	/**
-	 * This field states if the generations
-	 * are running or not.
+	 * This field states if the simulation
+	 * is running or not.
 	*/
 	private static boolean playing;
 	
@@ -87,8 +87,7 @@ public class Main {
 	}
 	
 	/**
-	 * draw() draws all the pixels on the canvas depending
-	 * on the living status of the cell at that position.
+	 * draw() draws all the pixels onto the canvas.
 	 */
 	private static void draw() {
 		for (int i = 0; i < grid.length; i++) {
@@ -109,11 +108,7 @@ public class Main {
 		Window.paint();
 	}
 	
-	/**
-	 * Runs on the press of a button.
-	 * 
-	 * @param b the button that was pressed.
-	 */
+	/** Runs on the press of the start/stop button. */
 	public static void onStartStopPress() {
 		if (Window.startStop.getText().equals("Start")) {
 			playing = true;
@@ -136,12 +131,12 @@ public class Main {
 		}
 	}
 	
-	/** @see onStartPress */
+	/** Runs when the step button is pressed. */
 	public static void onStepPress() {
 		runGeneration();
 	}
 	
-	/** @see onStartPress */
+	/** Runs when the clear button is pressed. */
 	public static void onClearPress() {
 		for (int i = 0; i < grid.length; i++) {
 			for (int j = 0; j < grid[0].length; j++) {
@@ -189,11 +184,11 @@ public class Main {
 			if (x >= Window.CANVAS_WIDTH) {
 				x = Window.CANVAS_WIDTH - 1;
 			}
-			if (x < 0) {
-				x = 0;
-			}
 			if (y >= Window.CANVAS_HEIGHT) {
 				y = Window.CANVAS_HEIGHT - 1;
+			}
+			if (x < 0) {
+				x = 0;
 			}
 			if (y < 0) {
 				y = 0;
