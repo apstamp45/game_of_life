@@ -79,8 +79,8 @@ public class Cell {
 	/**
 	 * This constructor sets the x and y position of the cell.
 	 * 
-	 * @param x the x position of the Cell to create.
-	 * @param y the y position of the Cell to create.
+	 * @param x the x position of the Cell.
+	 * @param y the y position of the Cell.
 	 */
 	public Cell(int x, int y) {
 		if (x < 0) {
