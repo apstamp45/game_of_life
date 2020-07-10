@@ -176,10 +176,9 @@ public class Window extends Application {
 		layout = $layout;
 		for (int i = 0; i < CANVAS_WIDTH; i++) {
 			for (int j = 0; j < CANVAS_HEIGHT; j++) {
-				layout[i][j] = new Pixel();
-				layout[i][j].r = DEFAULT_PIXEL_COLOR[0];
-				layout[i][j].g = DEFAULT_PIXEL_COLOR[1];
-				layout[i][j].b = DEFAULT_PIXEL_COLOR[2];
+				layout[i][j] = new Pixel(
+						DEFAULT_PIXEL_COLOR[0],  DEFAULT_PIXEL_COLOR[1],
+						DEFAULT_PIXEL_COLOR[2]);
 			}
 		}
 		gc.setFill(Color.rgb(
