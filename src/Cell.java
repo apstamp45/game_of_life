@@ -47,7 +47,7 @@ public class Cell {
 				continue;
 			} else if (toCheck[i][0] + x > (grid.length - 1) || toCheck[i][1] + y > (grid[0].length - 1)) {
 				continue;
-			} else if (grid[toCheck[i][0] + x][toCheck[i][1] + y].isAlive) {
+			} else (grid[toCheck[i][0] + x][toCheck[i][1] + y].isAlive) {
 				touchingLive++;
 			}
 		}
