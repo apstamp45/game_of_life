@@ -2,7 +2,7 @@
  * This class represents a pixel on a canvas.
  * 
  * @author apstamp45
- * @version 1.0
+ * @version 1.1
  */
 public class Pixel {
 	
@@ -16,4 +16,18 @@ public class Pixel {
 	
 	/** @see r */
 	public int b = 0;
+
+	/**
+	 * Simple constructor that sets the
+	 * rgb values.
+	 * 
+	 * @param r the r value.
+	 * @param g the g value.
+	 * @param b the b value.
+	 */
+	public Pixel (int r, int g, int b) {
+		this.r = r;
+		this.g = g;
+		this.b = b;
+	}
 }
