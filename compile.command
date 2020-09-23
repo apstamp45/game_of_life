@@ -1,2 +1,0 @@
-cd "$(dirname "$0")"
-javac -d ./bin -cp ./src:./lib/javafx-swt.jar:./lib/javafx.base.jar:./lib/javafx.controls.jar:./lib/javafx.fxml.jar:./lib/javafx.graphics.jar:./lib/javafx.media.jar:./lib/javafx.swing.jar:./lib/javafx.web.jar ./src/com/apstamp45/snake_game/*.java
