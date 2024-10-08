@@ -1,6 +1,5 @@
-This project requires the JavaFX library to function.
-https://openjfx.io/
+# Game of Life
 
-I've used JavaFX library version 11.0.2, but other versions should work too.
-
-To run the project, run the Main class with the VM option "--module-path /Path/to/javafx/library/lib/folder --add-modules javafx.controls, javafx.fxml".
+Implemented [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) using the [JavaFX](https://openjfx.io) graphics library.
+To compile and run, clone the repository and run the following command:
+`./mvnw install compile javafx:run`
